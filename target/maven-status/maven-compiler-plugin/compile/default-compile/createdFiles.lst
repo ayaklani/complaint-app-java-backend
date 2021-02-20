@@ -1,0 +1,16 @@
+io\abc\complaintportal\db\UserDAL.class
+io\abc\complaintportal\api\ComplaintPortalAuthorizer.class
+io\abc\complaintportal\ComplaintPortalApplication$1.class
+io\abc\complaintportal\api\Complaint.class
+io\abc\complaintportal\api\ComplaintPortalAuthenticator.class
+io\abc\complaintportal\resource\ComplaintResource.class
+io\abc\complaintportal\api\Role.class
+io\abc\complaintportal\ComplaintPortalConfiguration.class
+io\abc\complaintportal\db\ComplaintDAL.class
+io\abc\complaintportal\api\ComplaintStatus.class
+io\abc\complaintportal\api\User.class
+io\abc\complaintportal\ComplaintPortalApplication.class
+io\abc\complaintportal\resource\UserResource.class
+io\abc\complaintportal\Utils.class
+io\abc\complaintportal\api\PingResult.class
+io\abc\complaintportal\resource\PingResource.class
