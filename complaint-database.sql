@@ -1,16 +1,7 @@
+DROP SCHEMA IF EXISTS `complaint_portal` ;
+
 CREATE SCHEMA IF NOT EXISTS `complaint_portal` DEFAULT CHARACTER SET utf8mb4 DEFAULT COLLATE utf8mb4_unicode_ci;
 USE `complaint_portal` ;
-
-CREATE TABLE `complaint` (
-  `complaint_id` int NOT NULL AUTO_INCREMENT,
-  `title` varchar(50) DEFAULT NULL,
-  `content` text NOT NULL,
-  `status` enum('new','resolved','pending','dismissed') NOT NULL,
-  `user_id` int NOT NULL,
-  PRIMARY KEY (`complaint_id`),
-  KEY `user_id_idx` (`user_id`),
-  CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `role` (
   `role_id` int NOT NULL AUTO_INCREMENT,
@@ -30,7 +21,17 @@ CREATE TABLE `user` (
   KEY `role_id_idx` (`role_id`),
   CONSTRAINT `role_id` FOREIGN KEY (`role_id`) REFERENCES `role` (`role_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-CREATE DATABASE `complaint_portal` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+CREATE TABLE `complaint` (
+  `complaint_id` int NOT NULL AUTO_INCREMENT,
+  `title` varchar(50) DEFAULT NULL,
+  `content` text NOT NULL,
+  `status` enum('new','resolved','pending','dismissed') NOT NULL,
+  `user_id` int NOT NULL,
+  PRIMARY KEY (`complaint_id`),
+  KEY `user_id_idx` (`user_id`),
+  CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `role` VALUES (1,'ADMIN'),(2,'CUSTOMER');
 
