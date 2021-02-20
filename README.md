@@ -17,4 +17,4 @@ then run this:
 Check how to run dropwizard application for more information : https://www.dropwizard.io/en/latest/getting-started.html
 
 5- Download Postman to run to do the http requests https://app.getpostman.com/app/download/win64?
-6- Here is a link to test all the API's through postman : https://www.getpostman.com/collections/f22f79b262e706639b61 the for admin : username:aya, pass: 123
+6- You can test the API's in the resoure directory.Note that you have to provide 'basic auth' with each request. Also, by default the admin credentials are (username:aya, pass: 123)
