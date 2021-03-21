@@ -4,7 +4,7 @@ Interesting back-end application for a complainant and an admin. In which a comp
 Run: 
 1. Download Intellij IDE https://www.jetbrains.com/idea/download/#section=windows 
 2. Clone the repository, and open the pom.xml file with Intellij IDE. 
-3. Edit config.yml file with your database config, and change the password of the admin, and you may want to change the admin name which is by default 'aya'.
+3. Edit config.yml file with your database config, and you may want to change the admin name which is by default 'aya'.
 4. Download MySQL Workbench https://dev.mysql.com/downloads/workbench/ 
 5. Copy the sql statments from the 'complaint-database.sql' file, and past  them into your MySQL Workbench to create the database.
 6. On the left side of the Intellij IDE, do the following on Maven lifecycle: Clean, compile, and package.
